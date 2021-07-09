@@ -22,8 +22,8 @@
 		EC3ACA68266CE037001B8F07 /* ProteinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3ACA67266CE037001B8F07 /* ProteinViewController.swift */; };
 		EC3ACA6D266D37D4001B8F07 /* IdealProteinScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3ACA6C266D37D4001B8F07 /* IdealProteinScene.swift */; };
 		EC3ACA6F266E258C001B8F07 /* LineNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3ACA6E266E258C001B8F07 /* LineNode.swift */; };
+		EC953C7726983DD2008AF6BA /* atoms.csv in Resources */ = {isa = PBXBuildFile; fileRef = EC953C7626983DD2008AF6BA /* atoms.csv */; };
 		ECBF59BE267206E000A77FC3 /* AtomInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBF59BD267206E000A77FC3 /* AtomInfo.swift */; };
-		ECBF59C72672347500A77FC3 /* atoms.csv in Resources */ = {isa = PBXBuildFile; fileRef = ECBF59C62672347500A77FC3 /* atoms.csv */; };
 		ECD707BB2685D0CC007CCE91 /* ProteinTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD707BA2685D0CC007CCE91 /* ProteinTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,8 +43,8 @@
 		EC3ACA67266CE037001B8F07 /* ProteinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProteinViewController.swift; sourceTree = "<group>"; };
 		EC3ACA6C266D37D4001B8F07 /* IdealProteinScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdealProteinScene.swift; sourceTree = "<group>"; };
 		EC3ACA6E266E258C001B8F07 /* LineNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineNode.swift; sourceTree = "<group>"; };
+		EC953C7626983DD2008AF6BA /* atoms.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = atoms.csv; sourceTree = "<group>"; };
 		ECBF59BD267206E000A77FC3 /* AtomInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomInfo.swift; sourceTree = "<group>"; };
-		ECBF59C62672347500A77FC3 /* atoms.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = atoms.csv; path = ../../../../../../Desktop/atoms.csv; sourceTree = "<group>"; };
 		ECD707BA2685D0CC007CCE91 /* ProteinTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProteinTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,7 +128,7 @@
 				EC3A97FA265B990B00C61F28 /* LaunchScreen.storyboard */,
 				EC3A97FD265B990B00C61F28 /* Info.plist */,
 				EC3ACA362664A758001B8F07 /* ligands.txt */,
-				ECBF59C62672347500A77FC3 /* atoms.csv */,
+				EC953C7626983DD2008AF6BA /* atoms.csv */,
 			);
 			path = "Supporting files";
 			sourceTree = "<group>";
@@ -206,7 +206,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECBF59C72672347500A77FC3 /* atoms.csv in Resources */,
+				EC953C7726983DD2008AF6BA /* atoms.csv in Resources */,
 				EC3A97FC265B990B00C61F28 /* LaunchScreen.storyboard in Resources */,
 				EC3A97F9265B990B00C61F28 /* Assets.xcassets in Resources */,
 				EC3A97F7265B990A00C61F28 /* Main.storyboard in Resources */,
