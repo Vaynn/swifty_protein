@@ -30,14 +30,11 @@ class IdealProteinScene: SCNScene {
             let atom = atomList.filter({$0.id == conect.id})
             let begin = SCNVector3Make(atom[0].x, atom[0].y, atom[0].z)
             conect.connectTab.map({
-                print("lili")
-                print($0)
                 let id = $0
                 if (usedConnectid.filter({$0.doublet.contains(id) && $0.doublet.contains(atom[0].id)}).count == 0 ){
                     let linkedAtom = atomList.filter({$0.id == id})
                     usedConnectid.append(doubletConnect(doublet : [atom[0].id, id]))
                     
-                    print(linkedAtom[0])
                     let end = SCNVector3Make(linkedAtom[0].x, linkedAtom[0].y, linkedAtom[0].z)
                     let mat = SCNMaterial()
                             mat.diffuse.contents  = UIColor.white
@@ -53,13 +50,11 @@ class IdealProteinScene: SCNScene {
                 }
             })
         }
-        print(usedConnectid)
         let camera = SCNCamera()
         let cameraNode = SCNNode()
         cameraNode.camera = camera
         cameraNode.position = SCNVector3Make(0, 0, 22)
         self.rootNode.addChildNode(cameraNode)
-        print(atomList)
     }
     
     required init?(coder: NSCoder) {

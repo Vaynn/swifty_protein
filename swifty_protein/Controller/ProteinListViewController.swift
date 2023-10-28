@@ -60,7 +60,8 @@ extension ProteinListViewController:UITableViewDataSource, UITableViewDelegate{
         let cell = tableView.cellForRow(at: indexPath) as? ProteinTableViewCell
         cell?.activityIndicator.startAnimating()
         self.proteinName = String(self.filteredLigandsList[indexPath.row])
-        let protUrl = URL(string:"https://files.rcsb.org/ligands/view/\(proteinName)_ideal.pdb")
+        let first = proteinName.first!
+        let protUrl =  URL(string:"https://files.rcsb.org/ligands/\( first)/\(proteinName)/\(proteinName)_ideal.pdb")
         let headers: HTTPHeaders = [
             "Content-Type": "text/plain"
         ]
@@ -114,9 +115,7 @@ extension ProteinListViewController:UITableViewDataSource, UITableViewDelegate{
 
 extension ProteinListViewController:UISearchBarDelegate{
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        print("tutututu")
-        let text: String = self.searchBar.text ?? ""
-        print(text)
+        let _: String = self.searchBar.text ?? ""
         self.filteredLigandsList = searchText.isEmpty ? self.ligandsTab : self.ligandsTab.filter {(item: Substring) -> Bool in
             return item.range(of: searchText, options: .caseInsensitive, range: nil, locale: nil) != nil
         }

@@ -50,6 +50,9 @@ class ProteinViewController: UIViewController {
         activity_indicator.isHidden = false
         activity_indicator.startAnimating()
         self.title = proteinName
+        let textAttributes: [NSAttributedString.Key: Any] = [
+            NSAttributedString.Key.foregroundColor: UIColor(named: "violet") ?? UIColor.red,]
+        self.navigationController?.navigationBar.titleTextAttributes = textAttributes
         scnView.scene = IdealProteinScene(atomList: atomList, ConectList: conectList)
         scnView.backgroundColor = UIColor.white
         scnView.autoenablesDefaultLighting = true

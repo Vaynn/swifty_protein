@@ -44,7 +44,6 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if let _:String = KeychainWrapper.standard.string(forKey: "protein"){
-            print("turututu")
             displayButtons()
         }else{
             faceIDButton.isHidden = true
@@ -68,7 +67,6 @@ extension LoginViewController{
         context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "Authentication is needed to access app"){success, evaluateError in
             
             if success {
-                print("success")
                 DispatchQueue.main.async{
                     self.performSegue(withIdentifier: "segueToProteinList", sender: nil)}
             } else {
@@ -124,7 +122,6 @@ extension LoginViewController{
             touchIDButton.isHidden = false
             passcodeInput.isHidden = false
         } else if (biometricType == .faceID){
-            print("pk")
             touchIDButton.isHidden = true
             faceIDButton.isHidden = false
             passcodeInput.isHidden = false

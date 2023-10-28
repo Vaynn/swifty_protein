@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 sleep(3)
             }
         let navigationBarAppearace = UINavigationBar.appearance()
-        navigationBarAppearace.tintColor = UIColor(named: "light_grey")
+        navigationBarAppearace.tintColor = UIColor(named: "violet")
 
         return true
     }
